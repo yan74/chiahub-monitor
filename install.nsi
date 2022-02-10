@@ -1,5 +1,4 @@
 !include "MUI.nsh"
-!include "FileAssociation.nsh"
 
 !define APPNAME "chiahub.io monitor"
 !define COMPANYNAME "cryptico GmbH"
@@ -55,7 +54,7 @@ section "install"
 
   WriteUninstaller "$INSTDIR\uninstall.exe"
 
-  createShortCut "$SMPROGRAMS\${APPNAME}.lnk" "$INSTDIR\chiahub-monitor.exe" "" "$INSTDIR\logo.ico"
+  createShortCut "$SMPROGRAMS\${APPNAME}.lnk" "$INSTDIR\main.exe" "" "$INSTDIR\logo.ico"
 
   # Registry information for add/remove programs
     WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${APPNAME}" "DisplayName" "${APPNAME} - ${DESCRIPTION}"
