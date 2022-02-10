@@ -17,7 +17,7 @@
 Name "chiahub.io monitor"
 Icon "${NSISDIR}\Contrib\Graphics\Icons\orange-install.ico"
 OutFile "chiahub.io-monitor-installer_x86-64.exe"
-InstallDir $PROGRAMFILES64\AFPWorX
+InstallDir $PROGRAMFILES64\chiahub-monitor
 InstallDirRegKey HKLM "Software\cryptico\chiahub-monitor" "Install_Dir"
 RequestExecutionLevel admin
 LicenseData "LICENSE"
