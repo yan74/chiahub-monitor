@@ -5,13 +5,12 @@ from chiahub_monitor.client import ChiaClient
 
 async def run(client: ChiaClient):
 
-    await client.connect()
-
     while True:
         try:
             await client.upload()
         except:
             pass
+        print("sleeping")
         await asyncio.sleep(60 * 60)
 
 
