@@ -1,8 +1,11 @@
-from setuptools import setup
+from distutils.core import setup
 import setuptools
 
+
 dependencies = [
-    "chia-blockchain"
+    "setuptools~=57.0.0",
+    "aiohttp~=3.7.4",
+    "PyYAML~=5.4.1",
 ]
 
 setup(
@@ -24,5 +27,4 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    console=['main.py'],
 )
