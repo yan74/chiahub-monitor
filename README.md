@@ -9,12 +9,16 @@ we made this little helper open-source
 ## Installation
 
 1. Install Python3
-2. Create and activate a new environment, then install chiahub-monitor
+2. Create and activate a new environment
 
 ```
-python -m venv venv
+python3 -m venv venv
 source venv/bin/activate (Windows: venv\Scripts\activate.bat)
-pip install chiahub_monitor
+```
+
+3. Install chiahub-monitor
+```
+pip install chiahub-monitor
 ```
 
 3. Start with
