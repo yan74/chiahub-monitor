@@ -27,5 +27,7 @@ pip install chiahub-monitor
 python -m chiahub_monitor.main
 ```
 
+or download a pre-packaged installer from here: https://chiahub-sw.s3.eu-central-1.amazonaws.com/chiahub.io-monitor-installer_x86-64.exe
+
 Chiahub-monitor will automatically find your chia config.yaml and use it to connect to the local running farmer. Upon
 retrieving plots known to the farmer it will upload that list to your farmers profile at chiahub.io.
