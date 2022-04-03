@@ -1,4 +1,5 @@
 import asyncio
+import traceback
 
 from chiahub_monitor.client import ChiaClient
 
@@ -9,7 +10,8 @@ async def run(client: ChiaClient):
         try:
             await client.upload()
         except:
-            pass
+            tb = traceback.format_exc()
+            print(f"Error while uploading: {tb}")
         print("sleeping")
         await asyncio.sleep(60 * 60)
 

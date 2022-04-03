@@ -130,9 +130,10 @@ class ChiaClient:
                     plots = msg_harvesters[h['connection']['node_id']]['plots']
 
                     for plot in h['plots']:
-                        if hexstr_to_bytes(plot['pool_contract_puzzle_hash']) == puzzle_hash:
-                            del plot['pool_public_key']
-                            plots.append(plot)
+                        if plot['pool_contract_puzzle_hash']:
+                            if hexstr_to_bytes(plot['pool_contract_puzzle_hash']) == puzzle_hash:
+                                del plot['pool_public_key']
+                                plots.append(plot)
 
                 msg = {
                     "host": self.farmer_adr,
