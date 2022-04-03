@@ -10,7 +10,7 @@ dependencies=[
 
 setup(
     name="chiahub_monitor",
-    version="0.0.4",
+    version="0.0.5",
     author="Yan Hackl-Feldbusch",
     author_email="yan@cryptico.io",
     description="A monitoring utility for chia blockchain",
